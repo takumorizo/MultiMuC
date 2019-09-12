@@ -26,9 +26,9 @@ Note. At the first execution, package builging will be conducted, and simultaneo
 
 To execute, type as follows.
 ```sh
-julia --project ./src/main.jl MAP \\
---seed ${seed} -n ${iter} -b ${burnin} \\
---pdata=0.02 --pevidence=0.2 --pcon=0.999 --theta=0.5 --rho=0.1 \\
+julia --project ./src/main.jl MAP \
+--seed ${seed} -n ${iter} -b ${burnin} \
+--pdata=0.02 --pevidence=0.2 --pcon=0.999 --theta=0.5 --rho=0.1 \
 -o ${output_dir} ${BFL} ${BFH}
 ```
 ![1](/images_for_readme/readme_image_1.png)
