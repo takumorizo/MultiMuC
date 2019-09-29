@@ -18,4 +18,4 @@ RUN set -x; \
 	cd /opt/MultiMuC/examples/output/Strelka2/; \
 	md5sum -c /opt/MultiMuC/test/check;
 
-ENTRYPOINT ["julia --project /opt/MultiMuC/src/main.jl"]
+CMD ["julia"]
