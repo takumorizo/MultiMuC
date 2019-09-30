@@ -1,9 +1,12 @@
 FROM julia:1.2
 
+ENV JULIA_DEPOT_PATH /opt/julia
+
 RUN set -x; \
 	apt-get update; \
 	apt-get install -y sudo; \
 	sudo apt-get install -y git; \
+	mkdir -p /opt/julia; \
 	cd /opt; \
 	git clone https://github.com/takumorizo/MultiMuC.git; \
 	cd /opt/MultiMuC/src; \
